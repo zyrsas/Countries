@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CountriesController: UIViewController {
+class RegionController: UIViewController {
     
+    // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,12 +27,19 @@ class CountriesController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "RegionCell", bundle: nil), forCellReuseIdentifier: "regionCell")
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let countryViewController = segue.destination as? CountryController {
+            countryViewController.region = sender as! String
+        }
+    }
 
 }
 
 // MARK: - UITableVIiew Delegates
 
-extension CountriesController: UITableViewDelegate, UITableViewDataSource {
+extension RegionController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Region.allCases.count
     }
@@ -46,5 +53,10 @@ extension CountriesController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showCountries", sender: Region.allCases[indexPath.row].rawValue)
+    }
+    
     
 }

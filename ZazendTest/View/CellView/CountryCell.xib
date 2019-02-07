@@ -11,28 +11,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="CountryCell" customModule="ZazendTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="366" height="66"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="80" id="KGk-i7-Jjw" customClass="CountryCell" customModule="ZazendTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="366" height="65.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="328" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-QV-02E">
-                        <rect key="frame" x="10" y="10" width="50" height="45.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-04-NUS">
+                        <rect key="frame" x="60" y="10" width="258" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E57-jI-4RA">
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-IH-c5X">
+                                <rect key="frame" x="0.0" y="32.5" width="258" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇦🇩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfK-GL-aHl">
+                        <rect key="frame" x="10" y="20" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="9nh-4w-nF9"/>
+                            <constraint firstAttribute="height" constant="40" id="LaM-Bq-w33"/>
+                            <constraint firstAttribute="width" constant="40" id="jBQ-DB-7qX"/>
                         </constraints>
-                    </imageView>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="cbJ-QV-02E" secondAttribute="bottom" constant="10" id="Szz-S3-3np"/>
-                    <constraint firstItem="cbJ-QV-02E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="o1R-wc-XxJ"/>
-                    <constraint firstItem="cbJ-QV-02E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sHf-p2-YjM"/>
+                    <constraint firstAttribute="trailing" secondItem="3UR-04-NUS" secondAttribute="trailing" constant="10" id="68t-7L-LKA"/>
+                    <constraint firstItem="3UR-04-NUS" firstAttribute="leading" secondItem="LfK-GL-aHl" secondAttribute="trailing" constant="10" id="FPq-SS-IWQ"/>
+                    <constraint firstItem="3UR-04-NUS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Myi-BS-q2q"/>
+                    <constraint firstAttribute="bottom" secondItem="3UR-04-NUS" secondAttribute="bottom" constant="10" id="Y6J-Va-0UB"/>
+                    <constraint firstItem="LfK-GL-aHl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gEa-Fz-EOG"/>
+                    <constraint firstItem="LfK-GL-aHl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qfd-In-P6F"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="89.599999999999994" y="58.47076461769116"/>
+            <connections>
+                <outlet property="countryFlagLabel" destination="LfK-GL-aHl" id="iFv-Ai-Ony"/>
+                <outlet property="countryNameLabel" destination="E57-jI-4RA" id="4iC-74-ne7"/>
+                <outlet property="countryNativeNameLabel" destination="Oyi-IH-c5X" id="9NT-dh-1MU"/>
+            </connections>
+            <point key="canvasLocation" x="86.400000000000006" y="64.767616191904054"/>
         </tableViewCell>
     </objects>
 </document>

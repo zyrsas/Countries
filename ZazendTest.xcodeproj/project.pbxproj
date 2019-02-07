@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D6AD599E6EC2365D030219 /* Pods_ZazendTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67225440D23FC9B9BB89C149 /* Pods_ZazendTest.framework */; };
 		FAE912B2220C3F12002E3935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912B1220C3F12002E3935 /* AppDelegate.swift */; };
-		FAE912B4220C3F12002E3935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912B3220C3F12002E3935 /* ViewController.swift */; };
+		FAE912B4220C3F12002E3935 /* RegionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912B3220C3F12002E3935 /* RegionController.swift */; };
 		FAE912B7220C3F12002E3935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE912B5220C3F12002E3935 /* Main.storyboard */; };
 		FAE912B9220C3F13002E3935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE912B8220C3F13002E3935 /* Assets.xcassets */; };
 		FAE912BC220C3F13002E3935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE912BA220C3F13002E3935 /* LaunchScreen.storyboard */; };
+		FAE912CB220C4514002E3935 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912C9220C4514002E3935 /* CountryCell.swift */; };
+		FAE912CC220C4514002E3935 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE912CA220C4514002E3935 /* CountryCell.xib */; };
+		FAE912CF220C46D6002E3935 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912CE220C46D6002E3935 /* Region.swift */; };
+		FAE912D3220C4837002E3935 /* RegionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912D1220C4837002E3935 /* RegionCell.swift */; };
+		FAE912D4220C4837002E3935 /* RegionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE912D2220C4837002E3935 /* RegionCell.xib */; };
+		FAE912D7220C4E83002E3935 /* CountryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912D6220C4E83002E3935 /* CountryController.swift */; };
+		FAE912D9220C5385002E3935 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912D8220C5385002E3935 /* NetworkService.swift */; };
+		FAE912DC220C6672002E3935 /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912DB220C6672002E3935 /* CountryResponse.swift */; };
+		FAE912DE220CADF1002E3935 /* CurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912DD220CADF1002E3935 /* CurrenciesResponse.swift */; };
+		FAE912E0220CAE0D002E3935 /* languagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912DF220CAE0D002E3935 /* languagesResponse.swift */; };
+		FAE912E2220CB2AC002E3935 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E1220CB2AC002E3935 /* API.swift */; };
+		FAE912E5220CBAAF002E3935 /* String+EmojiFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */; };
+		FAE912E7220CBFBA002E3935 /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E6220CBFBA002E3935 /* CountryDetailController.swift */; };
+		FAE912E9220CD460002E3935 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E8220CD460002E3935 /* SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311708427D6544F5223F27C7 /* Pods-ZazendTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZazendTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZazendTest/Pods-ZazendTest.debug.xcconfig"; sourceTree = "<group>"; };
+		67225440D23FC9B9BB89C149 /* Pods_ZazendTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZazendTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83E8117966189C34EE7A718 /* Pods-ZazendTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZazendTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZazendTest/Pods-ZazendTest.release.xcconfig"; sourceTree = "<group>"; };
 		FAE912AE220C3F12002E3935 /* ZazendTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZazendTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE912B1220C3F12002E3935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAE912B3220C3F12002E3935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAE912B3220C3F12002E3935 /* RegionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionController.swift; sourceTree = "<group>"; };
 		FAE912B6220C3F12002E3935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE912B8220C3F13002E3935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE912BB220C3F13002E3935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE912BD220C3F13002E3935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE912C9220C4514002E3935 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		FAE912CA220C4514002E3935 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		FAE912CE220C46D6002E3935 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		FAE912D1220C4837002E3935 /* RegionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionCell.swift; sourceTree = "<group>"; };
+		FAE912D2220C4837002E3935 /* RegionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionCell.xib; sourceTree = "<group>"; };
+		FAE912D6220C4E83002E3935 /* CountryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryController.swift; sourceTree = "<group>"; };
+		FAE912D8220C5385002E3935 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAE912DB220C6672002E3935 /* CountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
+		FAE912DD220CADF1002E3935 /* CurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponse.swift; sourceTree = "<group>"; };
+		FAE912DF220CAE0D002E3935 /* languagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languagesResponse.swift; sourceTree = "<group>"; };
+		FAE912E1220CB2AC002E3935 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmojiFlag.swift"; sourceTree = "<group>"; };
+		FAE912E6220CBFBA002E3935 /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
+		FAE912E8220CD460002E3935 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D6AD599E6EC2365D030219 /* Pods_ZazendTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1218CE64B4E0D99B6192C278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67225440D23FC9B9BB89C149 /* Pods_ZazendTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B31FE9C72B432915A7C72D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				311708427D6544F5223F27C7 /* Pods-ZazendTest.debug.xcconfig */,
+				D83E8117966189C34EE7A718 /* Pods-ZazendTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAE912A5220C3F12002E3935 = {
 			isa = PBXGroup;
 			children = (
 				FAE912B0220C3F12002E3935 /* ZazendTest */,
 				FAE912AF220C3F12002E3935 /* Products */,
+				D9B31FE9C72B432915A7C72D /* Pods */,
+				1218CE64B4E0D99B6192C278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +106,116 @@
 		FAE912B0220C3F12002E3935 /* ZazendTest */ = {
 			isa = PBXGroup;
 			children = (
-				FAE912B1220C3F12002E3935 /* AppDelegate.swift */,
-				FAE912B3220C3F12002E3935 /* ViewController.swift */,
+				FAE912E3220CBA7E002E3935 /* Extension */,
+				FAE912C6220C4210002E3935 /* Network */,
+				FAE912C5220C420A002E3935 /* Model */,
+				FAE912C4220C41FE002E3935 /* Controller */,
+				FAE912C3220C41F1002E3935 /* View */,
+				FAE912C7220C421A002E3935 /* Common */,
+			);
+			path = ZazendTest;
+			sourceTree = "<group>";
+		};
+		FAE912C3220C41F1002E3935 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912D0220C4804002E3935 /* CellView */,
 				FAE912B5220C3F12002E3935 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE912C4220C41FE002E3935 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912D5220C4DEA002E3935 /* ViewController */,
+				FAE912C8220C44F5002E3935 /* CellController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAE912C5220C420A002E3935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912DA220C6645002E3935 /* Response */,
+				FAE912CD220C46C5002E3935 /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAE912C6220C4210002E3935 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912D8220C5385002E3935 /* NetworkService.swift */,
+				FAE912E1220CB2AC002E3935 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAE912C7220C421A002E3935 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912B1220C3F12002E3935 /* AppDelegate.swift */,
 				FAE912B8220C3F13002E3935 /* Assets.xcassets */,
 				FAE912BA220C3F13002E3935 /* LaunchScreen.storyboard */,
 				FAE912BD220C3F13002E3935 /* Info.plist */,
 			);
-			path = ZazendTest;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAE912C8220C44F5002E3935 /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912D1220C4837002E3935 /* RegionCell.swift */,
+				FAE912C9220C4514002E3935 /* CountryCell.swift */,
+			);
+			path = CellController;
+			sourceTree = "<group>";
+		};
+		FAE912CD220C46C5002E3935 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912CE220C46D6002E3935 /* Region.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FAE912D0220C4804002E3935 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912CA220C4514002E3935 /* CountryCell.xib */,
+				FAE912D2220C4837002E3935 /* RegionCell.xib */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		FAE912D5220C4DEA002E3935 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912B3220C3F12002E3935 /* RegionController.swift */,
+				FAE912D6220C4E83002E3935 /* CountryController.swift */,
+				FAE912E6220CBFBA002E3935 /* CountryDetailController.swift */,
+				FAE912E8220CD460002E3935 /* SearchController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAE912DA220C6645002E3935 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912DB220C6672002E3935 /* CountryResponse.swift */,
+				FAE912DD220CADF1002E3935 /* CurrenciesResponse.swift */,
+				FAE912DF220CAE0D002E3935 /* languagesResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FAE912E3220CBA7E002E3935 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE912C0220C3F13002E3935 /* Build configuration list for PBXNativeTarget "ZazendTest" */;
 			buildPhases = (
+				E1A0E27C1942A8B1EB676C00 /* [CP] Check Pods Manifest.lock */,
 				FAE912AA220C3F12002E3935 /* Sources */,
 				FAE912AB220C3F12002E3935 /* Frameworks */,
 				FAE912AC220C3F12002E3935 /* Resources */,
+				A96B9642F608F6E41EC778A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +278,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE912CC220C4514002E3935 /* CountryCell.xib in Resources */,
 				FAE912BC220C3F13002E3935 /* LaunchScreen.storyboard in Resources */,
 				FAE912B9220C3F13002E3935 /* Assets.xcassets in Resources */,
 				FAE912B7220C3F12002E3935 /* Main.storyboard in Resources */,
+				FAE912D4220C4837002E3935 /* RegionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A96B9642F608F6E41EC778A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZazendTest/Pods-ZazendTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZazendTest/Pods-ZazendTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A0E27C1942A8B1EB676C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZazendTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAE912AA220C3F12002E3935 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE912B4220C3F12002E3935 /* ViewController.swift in Sources */,
+				FAE912E2220CB2AC002E3935 /* API.swift in Sources */,
+				FAE912DE220CADF1002E3935 /* CurrenciesResponse.swift in Sources */,
+				FAE912D7220C4E83002E3935 /* CountryController.swift in Sources */,
+				FAE912E9220CD460002E3935 /* SearchController.swift in Sources */,
+				FAE912B4220C3F12002E3935 /* RegionController.swift in Sources */,
 				FAE912B2220C3F12002E3935 /* AppDelegate.swift in Sources */,
+				FAE912E0220CAE0D002E3935 /* languagesResponse.swift in Sources */,
+				FAE912E7220CBFBA002E3935 /* CountryDetailController.swift in Sources */,
+				FAE912DC220C6672002E3935 /* CountryResponse.swift in Sources */,
+				FAE912CB220C4514002E3935 /* CountryCell.swift in Sources */,
+				FAE912D3220C4837002E3935 /* RegionCell.swift in Sources */,
+				FAE912E5220CBAAF002E3935 /* String+EmojiFlag.swift in Sources */,
+				FAE912CF220C46D6002E3935 /* Region.swift in Sources */,
+				FAE912D9220C5385002E3935 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +511,13 @@
 		};
 		FAE912C1220C3F13002E3935 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311708427D6544F5223F27C7 /* Pods-ZazendTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANG6NGPE6U;
-				INFOPLIST_FILE = ZazendTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZazendTest/Common/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +531,13 @@
 		};
 		FAE912C2220C3F13002E3935 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83E8117966189C34EE7A718 /* Pods-ZazendTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ANG6NGPE6U;
-				INFOPLIST_FILE = ZazendTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZazendTest/Common/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

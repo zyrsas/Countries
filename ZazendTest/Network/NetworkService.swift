@@ -7,3 +7,49 @@
 //
 
 import Foundation
+import Moya
+
+enum NetworkService {
+    case countryByRegion(region: String)
+    case allCountry
+    case countryByCode(code: String)
+}
+
+extension NetworkService: TargetType {
+    
+    public var baseURL: URL {
+        return URL(string: "https://restcountries.eu/rest/v2/")!
+    }
+    
+    public var path: String {
+        switch self {
+        case .countryByRegion(let region):
+            return "region/\(region.lowercased())"
+        case .allCountry:
+            return "all/"
+        case .countryByCode(let code):
+            return "alpha/\(code.lowercased())"
+        }
+    }
+    
+    public var method: Moya.Method {
+       return .get
+    }
+    
+    public var sampleData: Data {
+        return Data()
+    }
+    
+    public var task: Task {
+        return .requestPlain
+    }
+    
+    public var headers: [String : String]? {
+        return [:]
+    }
+    
+    public var validationType: ValidationType {
+        return .successCodes
+    }
+}
+

@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+//Africa, Americas, Asia, Europe, Oceania
+enum Region: String, CaseIterable  {
+    case africa = "Africa"
+    case americas = "Americas"
+    case asia = "Asia"
+    case europe = "Europe"
+    case oceania = "Oceania"
+}
