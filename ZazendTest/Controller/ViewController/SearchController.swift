@@ -11,10 +11,14 @@ import RxCocoa
 import RxSwift
 
 class SearchController: UIViewController {
+    
     // MARK: - Outlets
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Variables
+
     var countries: [CountryResponse] = []
     var filtered:[CountryResponse] = []
     let disposeBag = DisposeBag()
@@ -70,7 +74,7 @@ class SearchController: UIViewController {
 
 }
 
-// MARK: - UITableVIiew Delegates
+    // MARK: - UITableVIiew Delegates
 
 extension SearchController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,7 +97,7 @@ extension SearchController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-// MARK: - UISerchBar Delegates
+    // MARK: - UISerchBar Delegates
 
 extension SearchController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

@@ -9,9 +9,12 @@
 import UIKit
 
 class CountryController: UIViewController {
+    
     // MARK: - Outlets
 
     @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Variables
     
     public var region: String = ""
     fileprivate var countries: [CountryResponse] = []
@@ -51,7 +54,7 @@ class CountryController: UIViewController {
 
 }
 
-// MARK: - UITableVIiew Delegates
+    // MARK: - UITableVIiew Delegates
 
 extension CountryController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

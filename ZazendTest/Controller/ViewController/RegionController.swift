@@ -11,9 +11,11 @@ import UIKit
 class RegionController: UIViewController {
     
     // MARK: - Outlets
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +39,7 @@ class RegionController: UIViewController {
 
 }
 
-// MARK: - UITableVIiew Delegates
+    // MARK: - UITableVIiew Delegates
 
 extension RegionController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

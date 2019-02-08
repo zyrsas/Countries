@@ -11,6 +11,7 @@ import UIKit
 class CountryCell: UITableViewCell {
     
     // MARK: - Outlets
+    
     @IBOutlet weak var countryFlagLabel: UILabel!
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var countryNativeNameLabel: UILabel!

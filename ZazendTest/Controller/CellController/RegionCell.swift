@@ -11,6 +11,7 @@ import UIKit
 class RegionCell: UITableViewCell {
     
     // MARK: - Outlets
+    
     @IBOutlet weak var regionNameLabel: UILabel!
     
     // MARK: - Life cycle

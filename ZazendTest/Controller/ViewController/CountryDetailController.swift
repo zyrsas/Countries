@@ -12,12 +12,15 @@ import MapKit
 class CountryDetailController: UIViewController {
     
      // MARK: - Outlets
+    
     @IBOutlet weak var flagLabel: UILabel!
     @IBOutlet weak var currenciesLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Variables
+
     public var country: CountryResponse?
     fileprivate var borders: [CountryResponse] = []
 
@@ -91,7 +94,7 @@ class CountryDetailController: UIViewController {
 
 }
 
-// MARK: - UITableVIiew Delegates
+    // MARK: - UITableVIiew Delegates
 
 extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
