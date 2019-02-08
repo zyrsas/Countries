@@ -29,7 +29,7 @@ class SearchController: UIViewController {
                 self.countries = response
                 self.tableView.reloadData()
             } else {
-                print(error)
+                ErrorReporting.showMessage(title: "Error", msg: error ?? "Server not available")
             }
         }
         

@@ -27,6 +27,7 @@
 		FAE912E5220CBAAF002E3935 /* String+EmojiFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */; };
 		FAE912E7220CBFBA002E3935 /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E6220CBFBA002E3935 /* CountryDetailController.swift */; };
 		FAE912E9220CD460002E3935 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE912E8220CD460002E3935 /* SearchController.swift */; };
+		FAECBE85220D80CE00C9296B /* ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAECBE84220D80CE00C9296B /* ErrorReporting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmojiFlag.swift"; sourceTree = "<group>"; };
 		FAE912E6220CBFBA002E3935 /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
 		FAE912E8220CD460002E3935 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		FAECBE84220D80CE00C9296B /* ErrorReporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		FAE912B0220C3F12002E3935 /* ZazendTest */ = {
 			isa = PBXGroup;
 			children = (
+				FAECBE83220D80B700C9296B /* Utility */,
 				FAE912E3220CBA7E002E3935 /* Extension */,
 				FAE912C6220C4210002E3935 /* Network */,
 				FAE912C5220C420A002E3935 /* Model */,
@@ -216,6 +219,14 @@
 				FAE912E4220CBAAF002E3935 /* String+EmojiFlag.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAECBE83220D80B700C9296B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FAECBE84220D80CE00C9296B /* ErrorReporting.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				FAE912E2220CB2AC002E3935 /* API.swift in Sources */,
 				FAE912DE220CADF1002E3935 /* CurrenciesResponse.swift in Sources */,
 				FAE912D7220C4E83002E3935 /* CountryController.swift in Sources */,
+				FAECBE85220D80CE00C9296B /* ErrorReporting.swift in Sources */,
 				FAE912E9220CD460002E3935 /* SearchController.swift in Sources */,
 				FAE912B4220C3F12002E3935 /* RegionController.swift in Sources */,
 				FAE912B2220C3F12002E3935 /* AppDelegate.swift in Sources */,

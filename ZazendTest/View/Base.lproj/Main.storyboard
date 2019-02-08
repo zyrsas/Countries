@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rc-JV-ZuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="339"/>
+            <point key="canvasLocation" x="585" y="233"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6oE-6n-1TB">
@@ -263,12 +263,11 @@
                     <connections>
                         <segue destination="zDv-6V-GAI" kind="relationship" relationship="viewControllers" id="Olh-3F-kyZ"/>
                         <segue destination="UHJ-4F-U0n" kind="relationship" relationship="viewControllers" id="7lv-oR-hxz"/>
-                        <segue destination="Bwi-WN-kUj" kind="relationship" relationship="viewControllers" id="Ldh-ri-Zmr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwu-cJ-lDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1890" y="233"/>
+            <point key="canvasLocation" x="-1676" y="-37"/>
         </scene>
         <!--Regiones-->
         <scene sceneID="fez-kv-Xh4">
@@ -289,22 +288,6 @@
             </objects>
             <point key="canvasLocation" x="-823" y="-435"/>
         </scene>
-        <!--Favourites-->
-        <scene sceneID="pwt-6Z-dyG">
-            <objects>
-                <viewController id="0hx-SP-tJg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rK8-AU-kxg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lJ7-id-Qss"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Favourites" id="anh-Mj-Uc9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yPJ-wj-gr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-127" y="976"/>
-        </scene>
         <!--Search-->
         <scene sceneID="hZu-4F-tfq">
             <objects>
@@ -324,28 +307,8 @@
             </objects>
             <point key="canvasLocation" x="-823.20000000000005" y="233.43328335832086"/>
         </scene>
-        <!--Favourites-->
-        <scene sceneID="Jpa-gZ-PY3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bwi-WN-kUj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favourites" image="favourite" id="SaX-dU-rzC"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VyX-OZ-MbU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0hx-SP-tJg" kind="relationship" relationship="rootViewController" id="jCQ-l6-YSX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cez-ef-83D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-823.20000000000005" y="975.56221889055485"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="favourite" width="24" height="24"/>
         <image name="location" width="24" height="24"/>
         <image name="loupe" width="24" height="24"/>
     </resources>

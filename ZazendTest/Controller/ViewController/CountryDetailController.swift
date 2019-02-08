@@ -67,6 +67,8 @@ class CountryDetailController: UIViewController {
                 if error == nil {
                     self.borders.append(response!)
                     self.tableView.reloadData()
+                } else {
+                    ErrorReporting.showMessage(title: "Error", msg: error ?? "Server not available")
                 }
             }
         })

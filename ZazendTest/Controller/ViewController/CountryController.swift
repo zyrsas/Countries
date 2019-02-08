@@ -25,7 +25,7 @@ class CountryController: UIViewController {
                 self.countries = response
                 self.tableView.reloadData()
             } else {
-                
+                ErrorReporting.showMessage(title: "Error", msg: error ?? "Server not available")
             }
         }
     }

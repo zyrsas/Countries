@@ -15,7 +15,6 @@ struct CountryResponse: Mappable {
     var topLevelDomain: [String] = []
     var alpha2Code: String = ""
     var alpha3Code: String = ""
-
     var callingCodes: [String] = []
     var capital: String = ""
     var altSpellings: [String] = []
@@ -35,8 +34,6 @@ struct CountryResponse: Mappable {
     var translations: String = ""
     var flag: String = ""
     var cioc: String = ""
-
-
     
     init?(map: Map) {
         
