@@ -10,10 +10,13 @@ import UIKit
 
 class CountryCell: UITableViewCell {
     
+    // MARK: - Outlets
     @IBOutlet weak var countryFlagLabel: UILabel!
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var countryNativeNameLabel: UILabel!
     
+    // MARK: - Life cycle
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,6 +26,8 @@ class CountryCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    // MARK: - Setup Cell
     
     func setupCell(flag: String, countryName: String, countryNativeName: String) {
         self.countryFlagLabel.text = flag.emojiFlag()

@@ -11,18 +11,18 @@ import RxCocoa
 import RxSwift
 
 class SearchController: UIViewController {
-    
+    // MARK: - Outlets
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     var countries: [CountryResponse] = []
-    var searchActive : Bool = false
     var filtered:[CountryResponse] = []
     let disposeBag = DisposeBag()
     
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         API.shared.getAllCountries { (response, error) in
             if error == nil {
@@ -38,6 +38,7 @@ class SearchController: UIViewController {
         self.initFilter()
     }
     
+    // MARK: - Init search
     
     func initFilter() {
         searchBar
@@ -58,6 +59,8 @@ class SearchController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "CountryCell", bundle: nil), forCellReuseIdentifier: "countryCell")
     }
+    
+    // MARK: - Prepare
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let countryDetailController = segue.destination as? CountryDetailController {
@@ -89,6 +92,8 @@ extension SearchController: UITableViewDelegate, UITableViewDataSource {
         self.performSegue(withIdentifier: "showDetail", sender: self.filtered[indexPath.row])
     }
 }
+
+// MARK: - UISerchBar Delegates
 
 extension SearchController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

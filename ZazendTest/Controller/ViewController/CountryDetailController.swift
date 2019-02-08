@@ -11,6 +11,7 @@ import MapKit
 
 class CountryDetailController: UIViewController {
     
+     // MARK: - Outlets
     @IBOutlet weak var flagLabel: UILabel!
     @IBOutlet weak var currenciesLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
@@ -18,8 +19,9 @@ class CountryDetailController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     public var country: CountryResponse?
-    
     fileprivate var borders: [CountryResponse] = []
+
+    // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class CountryDetailController: UIViewController {
         self.getBordersWith()
     }
     
+    // MARK: - Confire UI
+
     func confireUI() {
         self.title = self.country?.name
         self.flagLabel.text = self.country?.alpha2Code.emojiFlag()
@@ -48,6 +52,8 @@ class CountryDetailController: UIViewController {
         
     }
     
+    // MARK: - Confire Map
+    
     func configureMap() {
         let coord = CLLocationCoordinate2D(latitude: self.country?.latlng.first ?? 0.0, longitude: self.country?.latlng.last ?? 0.0)
         
@@ -60,6 +66,7 @@ class CountryDetailController: UIViewController {
         self.map.setCenter(coord, animated: true)
     }
     
+    // MARK: - Get all borders
     
     func getBordersWith() {
         self.country?.borders.forEach({ (item) in
@@ -103,14 +110,12 @@ extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
         return 45
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "detailCountryVC") as! CountryDetailController
         vc.country = self.borders[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
 }
 
 

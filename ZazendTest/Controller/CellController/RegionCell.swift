@@ -10,8 +10,10 @@ import UIKit
 
 class RegionCell: UITableViewCell {
     
+    // MARK: - Outlets
     @IBOutlet weak var regionNameLabel: UILabel!
     
+    // MARK: - Life cycle
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +26,9 @@ class RegionCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - Setup Cell
+
     func setupCell(region: String) {
         self.regionNameLabel.text = region
     }
-    
 }

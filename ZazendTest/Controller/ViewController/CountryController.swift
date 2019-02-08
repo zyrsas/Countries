@@ -9,12 +9,16 @@
 import UIKit
 
 class CountryController: UIViewController {
+    // MARK: - Outlets
 
     @IBOutlet weak var tableView: UITableView!
     
     public var region: String = ""
     fileprivate var countries: [CountryResponse] = []
     
+    
+    // MARK: - Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +41,7 @@ class CountryController: UIViewController {
         tableView.register(UINib(nibName: "CountryCell", bundle: nil), forCellReuseIdentifier: "countryCell")
     }
     
+    // MARK: - Prepare
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let countryDetailController = segue.destination as? CountryDetailController {
@@ -62,7 +67,6 @@ extension CountryController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "showCountryDetail", sender: self.countries[indexPath.row])

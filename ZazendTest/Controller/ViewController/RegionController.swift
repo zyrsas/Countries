@@ -20,7 +20,6 @@ class RegionController: UIViewController {
        configureTableView()
     }
     
-    
     // MARK: - Configure TableView
     
     func configureTableView() {
@@ -28,6 +27,7 @@ class RegionController: UIViewController {
         tableView.register(UINib(nibName: "RegionCell", bundle: nil), forCellReuseIdentifier: "regionCell")
     }
     
+    // MARK: - Prepare
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let countryViewController = segue.destination as? CountryController {
@@ -57,6 +57,4 @@ extension RegionController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "showCountries", sender: Region.allCases[indexPath.row].rawValue)
     }
-    
-    
 }
