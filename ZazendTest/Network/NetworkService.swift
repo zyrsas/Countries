@@ -9,6 +9,9 @@
 import Foundation
 import Moya
 
+
+let BASE_URL = "https://restcountries.eu/rest/v2/"
+
 enum NetworkService {
     case countryByRegion(region: String)
     case allCountry
@@ -18,7 +21,7 @@ enum NetworkService {
 extension NetworkService: TargetType {
     
     public var baseURL: URL {
-        return URL(string: "https://restcountries.eu/rest/v2/")!
+        return URL(string: BASE_URL)!
     }
     
     public var path: String {

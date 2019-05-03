@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct CurrenciesResponse: Mappable {
+    
     var code: String = ""
     var name: String = ""
     var symbol: String = ""

@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct CountryResponse: Mappable {
+    
     var name: String = ""
     var topLevelDomain: [String] = []
     var alpha2Code: String = ""

@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct languagesResponse: Mappable {
+    
     var iso639_1: String = ""
     var iso639_2: String = ""
     var name: String = ""

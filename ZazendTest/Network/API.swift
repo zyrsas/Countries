@@ -11,9 +11,9 @@ import Moya
 import Moya_ObjectMapper
 
 class API {
-    static let shared = API()
+    public static let shared = API()
     
-    let provider = MoyaProvider<NetworkService>()
+    private let provider = MoyaProvider<NetworkService>()
 
     func getCountriesByRegion(region: String, completionHandler: @escaping ([CountryResponse], String?) -> Void){
         provider.request(.countryByRegion(region: region)) { (result) in
